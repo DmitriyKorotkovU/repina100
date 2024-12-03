@@ -1,4 +1,4 @@
-@mixin font-face($name, $path, $weight,  $style) {
+@mixin font-face($name, $path, $weight, $style) {
   @font-face {
     font-family: $name;
     src:
@@ -11,19 +11,44 @@
 }
 
 @mixin mobile-only() {
-  @media (width < $breakpoint-tablet) {
+  @media (width < $breakpoint-tablet-small) {
     @content;
   }
 }
 
-@mixin not-mobile() {
-  @media ($breakpoint-tablet <= width) {
+
+@mixin tablet-small() {
+  @media ($breakpoint-tablet-small <=width) {
+    @content;
+  }
+}
+
+@mixin tablet-small-only() {
+  @media ($breakpoint-tablet-small <=width < $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media ($breakpoint-tablet <=width) {
     @content;
   }
 }
 
 @mixin tablet-only() {
-  @media ($breakpoint-tablet <= width < $breakpoint-desktop) {
+  @media ($breakpoint-tablet <=width < $breakpoint-desktop-small) {
+    @content;
+  }
+}
+
+@mixin desktop-small() {
+  @media ($breakpoint-desktop-small <=width) {
+    @content;
+  }
+}
+
+@mixin desktop-small-only() {
+  @media ($breakpoint-desktop-small <=width < $breakpoint-desktop) {
     @content;
   }
 }
@@ -34,8 +59,8 @@
   }
 }
 
-@mixin desktop-only() {
-  @media ($breakpoint-desktop <= width) {
+@mixin desktop() {
+  @media ($breakpoint-desktop <=width) {
     @content;
   }
 }
