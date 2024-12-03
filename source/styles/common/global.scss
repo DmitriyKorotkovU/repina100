@@ -30,6 +30,16 @@ body {
   color: var(--text-dark);
   scroll-behavior: smooth;
 
+  @include not-mobile() {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @include desktop-only() {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
   &.open-menu {
     overflow: hidden;
   }

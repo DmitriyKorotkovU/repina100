@@ -10,7 +10,7 @@
   }
 
   @include desktop-only {
-    // max-width: $breakpoint-desktop;
+    max-width: $breakpoint-desktop;
     padding-inline: $container-padding-desktop;
   }
 }

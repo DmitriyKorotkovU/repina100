@@ -11,6 +11,10 @@
   background-color: var(--btn-default);
   border-radius: 70px;
 
+  @include not-mobile() {
+    padding: 15px;
+  }
+
   &:hover,
   &:focus-visible {
     background-color: var(--btn-hover);
