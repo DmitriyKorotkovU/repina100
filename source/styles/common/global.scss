@@ -1,14 +1,42 @@
+:root {
+  --stroke: #dbe5f0;
+  --btn-default: #4b80c4;
+  --btn-hover: #5d8cca;
+  --btn-pressed: #4a70a2;
+  --btn-disable: #e3e7ed;
+  --text-light: #ffffff;
+  --text-accent: #4b80c4;
+  --text-dark: #121212;
+  --text-secondary: #474747;
+  --bg-primary: #ffffff;
+  --bg-secondary: #dbe6f3;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
-  font-family: $font-primary;
+  // font-family: $font-primary;
+  font-family: Arial;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $color-black;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-dark);
+  scroll-behavior: smooth;
 
   &.open-menu {
-      overflow: hidden;
+    overflow: hidden;
   }
+}
+
+main {
+  flex-grow: 1;
 }
 
 a {
