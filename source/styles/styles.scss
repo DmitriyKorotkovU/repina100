@@ -1,6 +1,11 @@
+/* VENDORS */
+@import "./vendor/normalize.scss";
+
 /* GLOBAL */
+@import "./common/mixins.scss";
 @import "./common/variables.scss";
 @import "./common/global.scss";
+@import "./common/general.scss";
 @import "./common/fonts.scss";
 
 /* BLOCKS */

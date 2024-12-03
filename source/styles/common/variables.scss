@@ -1,1 +1,34 @@
-/* здесь используйте глобальные переменные */
+// Цвета
+$color-white: #ffffff;
+$color-silver-lightness: #f8f9fc;
+$color-silver-light: #e8e8e8;
+$color-silver: #c8c9cc;
+$color-silver-dark: #b6bdcc;
+$color-silver-darkness: #787878;
+$color-devider: #74819C;
+$color-black: #000000;
+$color-brand: #102654;
+$color-brand-darkness: #030a1a;
+$color-brand-light: #1c3374;
+$color-brand-lightness: #14367a;
+$color-desc: #2e35ac;
+$color-accent: #103aae;
+$color-btn-tab: #d10a42;
+$color-banner: #ed0233;
+$color-invalid: #ff121f;
+$gradient-bg: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$gradient-text: linear-gradient(129deg, #d10a42 0%, #0041ca 60%);
+$gradient-btn: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+$gradient-btn-start: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+
+// Шрифты
+$font-primary: "Inter", "Arial", sans-serif;
+
+// Размеры вьюпортов
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 744px;
+$breakpoint-mobile: 360px;
+
+$container-padding-mobile: 15px;
+$container-padding-tablet: 20px;
+$container-padding-desktop: 60px;
