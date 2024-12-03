@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Церковь евангельских христиан Чебоксары</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicons/apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/inter-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/inter-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/inter-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/inter-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Церковь евангельских христиан Чебоксары</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/inter-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__image">
+          <picture>
+            <source type="image/webp" media="(min-width: 744px)"
+              srcset="/images/hero-desktop@1x.webp 1x, /images/hero-desktop@2x.webp 2x" width="555" height="555">
+            <source type="image/webp" srcset="/images/hero-mobile@1x.webp 1x, /images/hero-mobile@2x.webp 2x"
+              width="200" height="200">
+            <source type="image/jpeg" media="(min-width: 744px)"
+              srcset="/images/hero-desktop@1x.jpg 1x, /images/hero-desktop@2x.jpg 2x" width="555" height="555">
+            <img src="/images/hero-mobile@1x.jpg" srcset="/images/hero-mobile@2x.jpg 2x" width="200" height="200"
+              alt="img">
+          </picture>
+        </div>
+        <div class="hero__text-content">
+          <h1 class="hero__title">Церковь, основанная <span class="line-break-span"><a href="#">на Библии</a>. Добро
+              пожаловать!</span></h1>
+          <p class="hero__text">Мы верим, что Библия – это живое Слово Божье, которое освещает путь каждого, кто ищет
+            истину. Наша церковь – это место, где вас всегда примут с&nbsp;любовью и&nbsp;радостью.</p>
+          <div class="hero__buttons">
+            <a class="button" href="#">Узнать больше о вере</a>
+            <a class="button button--transparent" href="#">Посетить богослужение</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

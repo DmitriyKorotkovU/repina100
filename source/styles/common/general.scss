@@ -1,16 +1,16 @@
 .container {
-  min-width: $breakpoint-mobile;
-  max-width: $breakpoint-mobile;
+  // min-width: 320px;
+  // max-width: $breakpoint-mobile;
   margin: 0 auto;
   padding-inline: $container-padding-mobile;
 
   @include not-mobile {
-    max-width: $breakpoint-tablet;
+    // max-width: $breakpoint-tablet;
     padding-inline: $container-padding-tablet;
   }
 
   @include desktop-only {
-    max-width: $breakpoint-desktop;
+    // max-width: $breakpoint-desktop;
     padding-inline: $container-padding-desktop;
   }
 }

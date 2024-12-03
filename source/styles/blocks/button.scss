@@ -1,0 +1,42 @@
+.button {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-light);
+  background-color: var(--btn-default);
+  border-radius: 70px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--btn-hover);
+  }
+
+  &:active {
+    background-color: var(--btn-pressed);
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: var(--btn-disable);
+  }
+
+  &--transparent {
+    color: var(--btn-default);
+    background-color: transparent;
+    outline: 2px solid var(--btn-default);
+    outline-offset: -2px;
+
+    &:hover,
+    &:focus-visible,
+    &:disabled,
+    &.disabled {
+      outline: 0;
+      color: var(--text-light);
+    }
+  }
+}
