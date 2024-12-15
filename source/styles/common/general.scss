@@ -4,12 +4,12 @@
 	margin: 0 auto;
 	padding-inline: $container-padding-mobile;
 
-	@include tablet {
-		// max-width: $breakpoint-tablet;
+	@include tablet() {
+		max-width: 1200px;
 		padding-inline: $container-padding-tablet;
 	}
 
-	@include desktop {
+	@include desktop() {
 		max-width: $breakpoint-desktop;
 		padding-inline: $container-padding-desktop;
 	}

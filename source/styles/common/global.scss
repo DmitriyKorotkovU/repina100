@@ -35,7 +35,7 @@ body {
 		line-height: 25px;
 	}
 
-	@include desktop() {
+	@include desktop-small() {
 		font-size: 21px;
 		line-height: 30px;
 	}
