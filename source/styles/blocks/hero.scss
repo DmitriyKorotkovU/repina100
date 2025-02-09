@@ -6,6 +6,10 @@
 	@include tablet-small-only() {
 		padding: 60px 0;
 	}
+
+  @include tablet() {
+    padding: 30px 0;
+  }
 }
 
 .hero__container {

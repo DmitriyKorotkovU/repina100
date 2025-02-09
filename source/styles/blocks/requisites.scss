@@ -1,0 +1,48 @@
+.requisites__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+
+  @include tablet() {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.requisites__name {
+  margin: 0;
+  margin-bottom: 15px;
+
+  span {
+    font-size: 15px;
+    font-weight: 500;
+
+    @include tablet() {
+      margin-top: 5px;
+      font-size: inherit;
+    }
+  }
+}
+
+.requisites__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+.requisites__item {
+  span {
+    font-size: 15px;
+    font-weight: 500;
+
+    @include tablet() {
+      font-size: inherit;
+    }
+  }
+}
+

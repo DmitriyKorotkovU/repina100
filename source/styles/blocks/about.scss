@@ -3,7 +3,7 @@
   background-color: var(--bg-secondary);
 
   @include tablet() {
-    padding: 50px 0 52px;
+    padding: 50px 0 50px;
     /*Лучше одинаковые значения top и bottom*/
   }
 
@@ -24,6 +24,11 @@
     align-items: center;
   }
 
+  @include tablet() {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+  }
+
   @include desktop-small() {
     grid-template-columns: 57% 1fr;
     row-gap: 50px;
@@ -41,9 +46,11 @@
     margin-bottom: auto;
   }
 
-  // @include tablet-only() {
-  //   text-align: center;
-  // }
+  @include tablet() {
+    margin-top: 20px;
+    font-size: 60px;
+    line-height: 72px;
+  }
 
   @include desktop-small() {
     text-align: left;
@@ -55,7 +62,7 @@
 .about__image {
   max-width: 380px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 2px;
 
   @include tablet-small() {
     max-width: 250px;
